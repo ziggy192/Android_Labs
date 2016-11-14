@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorLightGray"
+    tools:context="com.example.nghia.lab_0102.Detail_Activity">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_night_dress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_girl_dressing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/girl_dressing" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_girl_dressing"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_night_dress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:paddingLeft="10dp"
+                    android:text="Night dress\navailable in many colors"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn_add_to_cart_small"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_night_dress"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorOrange"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Add to cart"
+                    android:textColor="@color/colorWhite" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_night_dress"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/heart_shape" />
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/bookmark_shape" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_shape" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rl_colors"
+            android:layout_below="@id/rl_night_dress"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Colors"
+                android:textSize="@dimen/text_size_title" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_colors"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/black" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/dark_blue" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/light_blue" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/orange" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_sizes"
+            android:layout_below="@id/rl_colors"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/tv_Sizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Sizes"
+                android:textSize="@dimen/text_size_title" />
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_Sizes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/s" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:maxWidth="40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/orange"
+                    android:src="@drawable/m" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="centerInside"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/l" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="centerInside"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/xl" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_below="@id/rl_sizes"
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Add to cart"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv_available"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_below="@id/btn_add_to_cart"
+            android:text="Available within 2-4 business days Epress - Delivery available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <RelativeLayout
+
+            android:id="@+id/rl_details"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_available"
+            android:padding="10dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/text_details_contents"
+                android:layout_below="@id/tv_details"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@id/rl_details"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
