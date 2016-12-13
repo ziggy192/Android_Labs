@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ValueBar">
+        <attr name="value" format="integer">
+
+        </attr>
+        <attr name="label" format="string"/>
+    </declare-styleable>
+
+</resources>
