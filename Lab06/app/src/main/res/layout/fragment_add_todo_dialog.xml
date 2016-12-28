@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nghia.lab06.fragments.AddTodoDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rl_add_todo_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+        <EditText
+            android:id="@+id/et_title"
+            android:hint="title"
+            android:padding="5dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_content"
+            android:hint="content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/et_title"
+            android:gravity="top|left"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Spinner
+            android:id="@+id/spn_color_chooser"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="src_over"
+            android:layout_below="@id/et_content"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imv_confirm_add_todo"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_check_circle_black_48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+        <RadioGroup
+            android:id="@+id/rg_is_completed"
+            android:layout_below="@id/et_content"
+            android:checkedButton="@+id/rbtn_in_progress"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtn_in_progress"
+                android:text="In Progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbtn_completed"
+                android:text="Completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    
+
+</FrameLayout>
